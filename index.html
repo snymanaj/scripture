@@ -265,15 +265,24 @@
     <script>
         // ⚠️ REPLACE THIS WITH YOUR FIREBASE CONFIG
         // See setup guide for instructions
-        const firebaseConfig = {
+        // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
   apiKey: "AIzaSyC-MJfQjXGSWZ_L8GcEeznip_9JGguTRXU",
   authDomain: "scripture-memorization-a9784.firebaseapp.com",
-  databaseURL: https://scripture-memorization-a9784-default-rtdb.europe-west1.firebasedatabase.app,
+  databaseURL: "https://scripture-memorization-a9784-default-rtdb.europe-west1.firebasedatabase.app",
   projectId: "scripture-memorization-a9784",
   storageBucket: "scripture-memorization-a9784.firebasestorage.app",
   messagingSenderId: "105568575696",
   appId: "1:105568575696:web:9f31f289a4343e867bfed5"
 };
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
 
         let database;
